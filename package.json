@@ -1,6 +1,6 @@
 {
   "name": "promisify-bash",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The library aims to execute commands in local terminal (/bin/bin on Mac cmd.exe on Window) in promisifing ways.",
   "main": "index.js",
   "scripts": {
