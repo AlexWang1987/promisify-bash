@@ -1,9 +1,10 @@
 var bash = require('../index.js');
 
-bash('npm config list')
-  .then(function(d) {
-    console.log(d);
+bash('cp -Rvn ./source/ ./dest')
+  .then(function (d) {
+    // console.log(d);
   })
-  .catch(function(e) {
-    console.log(e);
+  .catch(function (e) {
+    //console.log(e);
   })
+
