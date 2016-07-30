@@ -11,8 +11,11 @@ var bash = function (cmd, options) {
     });
 
     //stdout & stderr output.
-    childProcess.stdout.pipe(process.stdout);
-    childProcess.stderr.pipe(process.stderr);
+    if (!(options['liveStdout'] && options['liveStdout'] === false))
+      childProcess.stdout.pipe(process.stdout);
+
+    if (!(options['liveStderr'] && options['liveStderr'] === false))
+      childProcess.stderr.pipe(process.stderr);
   });
 };
 
